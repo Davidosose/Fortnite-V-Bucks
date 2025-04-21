@@ -1,0 +1,85 @@
+body{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient( 145deg, #13011f, #080108);
+  color: #ffe400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container{
+
+  height: 30rem;
+  color: #000;
+  background-image: url(./images/V\ Bucks\ Png\ -\ Fortnite\ V\ Bucks\ PNG\ Transparent\ With\ Clear\ Background\ ID\ 172210\ _\ TopPNG.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px 20px;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(59, 58, 58, 0.3);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.226);
+}
+.hero-image{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+h1{
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #f5eaff;
+  text-shadow: 1px 1px 2px #000000a9;
+}
+p{
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #1b1b1b;
+  color: #a9c4e2;
+}
+
+.cta-button{
+  display: inline-block;
+  background-color: #13011f;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover{
+  background-color: #341b5a;
+}
+
+@media (max-width: 768px){
+  h1{
+    font-size: 1.6rem;
+  }
+  .cta-button{
+    font-size: 1rem;
+    padding: 20px 30px;
+    margin: 2rem; 
+  }
+  @media (max-width: 480px){
+    .container{
+      height: 20rem;
+      padding: 20px 15px;
+    }
+    h1{
+      font-size: 1.4rem;
+    }
+    p{
+      font-size: 0.95rem;
+    }
+    .cta-button{
+      font-size: 0.95;
+      padding: 10px 8px;
+      margin: -3rem; 
+  }
+}
