@@ -1,63 +1,91 @@
 body{
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient( 145deg, #13011f, #080108);
-  color: #ffe400;
+  box-sizing: border-box;
+  background-image: url(./images/V\ Bucks\ Png\ -\ Fortnite\ V\ Bucks\ PNG\ Transparent\ With\ Clear\ Background\ ID\ 172210\ _\ TopPNG.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 .container{
-
-  height: 30rem;
-  color: #000;
-  background-image: url(./images/V\ Bucks\ Png\ -\ Fortnite\ V\ Bucks\ PNG\ Transparent\ With\ Clear\ Background\ ID\ 172210\ _\ TopPNG.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 2px 2px;
   width: 100%;
   max-width: 650px;
-  padding: 30px 20px;
-  border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(59, 58, 58, 0.3);
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.226);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.267);
+  animation: fadein 2s linear;
 }
-.hero-image{
+@keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.container img{
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 25px;
+  border-radius: 2rem 2rem 0 0;
+  animation: fadein 2s linear;
 }
-h1{
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-  color: #f5eaff;
-  text-shadow: 1px 1px 2px #000000a9;
+.content{
+  background: #1f043d60;
+  backdrop-filter: blur(5px);
+  margin-top: -1.6rem;
+  height: 200px;
+  color: #fafafa;
+  border-radius: 0 0 2rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-p{
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  color: #1b1b1b;
+.content h1{
+  color: aliceblue;
+  filter: drop-shadow(2px 2px 2px rgb(83, 78, 78));
+  text-align: center;
+  padding-top: 1rem;
+}
+.content p{
   color: #a9c4e2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
 }
-
 .cta-button{
-  display: inline-block;
-  background-color: #13011f;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  border-radius: 8px;
+  background-color: rgb(253, 253, 253);
+  color: #320b5f;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  padding: .4rem 4rem;
+  border: 1px solid #a9c4e2;
+  border-radius: .3rem;
+  transition: background .3s ease;
+  animation: pump 2s linear infinite;
 }
 .cta-button:hover{
-  background-color: #341b5a;
+  background-color: #1f043d;
+  color: white;
+}
+@keyframes pump{
+  0% {
+    padding: .4rem 1rem;
+    opacity: 0;
+}
+50% {
+    padding: .4rem 2rem;
+    opacity: 1;
+}
+100% {
+    padding: .4rem 1rem;
+    opacity: 1;
+}
 }
 
+
+
 @media (max-width: 768px){
+  .container{
+  }
   h1{
     font-size: 1.6rem;
   }
@@ -67,10 +95,6 @@ p{
     margin: 2rem; 
   }
   @media (max-width: 480px){
-    .container{
-      height: 20rem;
-      padding: 20px 15px;
-    }
     h1{
       font-size: 1.4rem;
     }
